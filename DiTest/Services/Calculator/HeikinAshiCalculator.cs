@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DiTest.Interfaces;
 
 namespace DiTest.Services.Calculator
 {
-    public class HeikinAshiCalculator
+    public class HeikinAshiCalculator : ICandleCalculator
     {
         private List<Candle> _candlesStandard;
         public List<Candle> CandlesStandard
